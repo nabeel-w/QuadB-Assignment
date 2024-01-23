@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO - Best Price to Trade</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>QUADB</h1>
+        <div class="market-data">
+            <span class="price-ticker">INR</span>
+            <div class="dropdown">
+                <span class="price-ticker" id="coin-field">Coin</span>
+                <div class="dropdown-content" id="dropdown-menu">
+                  <!-- <a href="#" class="dropdown-item">Item 1</a> -->
+                </div>
+              </div>
+            <button class="btn buy-btn" id="buy-btn">BUY COIN</button>
+        </div>
+    </header>
+    <main>
+        <h2>Best Price to Trade</h2>
+        <div class="trading-prices">
+            <div>
+                <h3>--- %</h3>
+                <p>5 Mins</p>
+            </div>
+            <div>
+                <h3>--- %</h3>
+                <p>1 Hour</p>
+            </div>
+            <div>
+                <h3 class="price-center" id="best-buy">₹ ---</h3>
+                <p class="desc-center">Average BTC/INR net price including commission</p>
+            </div>
+            <div>
+                <h3>--- %</h3>
+                <p>1 Day</p>
+            </div>
+            <div>
+                <h3>--- %</h3>
+                <p>7 Days</p>
+            </div>
+        </div>
+
+        <div class="price-comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Last Traded Price</th>
+                        <th>Buy / Sell Price</th>
+                        <th>Difference</th>
+                        <th>Savings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div style="display: flex; justify-items: center; justify-content: center;">
+                                <img src="https://www.svgrepo.com/show/331638/wazirx.svg" alt="WazirXIcon"> <span>WazirX</span>
+                            </div>
+                        </td>
+                        <td id="last-price">₹ ---</td>
+                        <td id="buy-sell">₹ --- / ₹ ---</td>
+                        <td id="difference">--- %</td>
+                        <td id="savings">₹ ---</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="Scripts/index.js"></script>
+</body>
+
+</html>
